@@ -1,0 +1,20 @@
+CHANGE IN THE xampp\sendmail\sendmail_config file
+>>>( un-comment all of this)<<<
+
+smtp_server=smtp.gmail.com
+smtp_port=587
+error_logfile=error.log
+debug_logfile=debug.log
+auth_username=yourmailid@gmail.com
+auth_password=yourpassword
+force_sender=yourmailid@gmail.com
+
+CHANGE IN THE xampp\php\php_config file and php_ini file
+>>>( search for mail function and un-comment all of this)<<<
+
+SMTP=smtp.gmail.com
+smtp_port=587
+sendmail_from = yourmail@gmail.com
+sendmail_path = "C:\xampp\sendmail\sendmail.exe -t"
+
+( MAKE THESE CHANGESTO SEND MAILS FROM SMTP METHOD)
